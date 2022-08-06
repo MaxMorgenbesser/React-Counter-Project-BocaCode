@@ -12,17 +12,17 @@ export default function Counter (){
             return minusOne()
         }
         else{
-            return reset
+            return reset()
         }
     }
 
 
-    return (<>
+    return (<counter>
     <h3>Count: {count}</h3>
     <button onClick={Checkcount}>-</button>
     <button onClick={reset}>Reset</button>
     <button onClick={addOne}>+</button>
 
-    </>
+    </counter>
     )
 }
